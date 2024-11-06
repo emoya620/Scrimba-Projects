@@ -1,0 +1,133 @@
+/**
+RED: #9E2A2B
+DARK-RED: #540B0E
+BEIGE: #FFF3B0
+DARK-YELLOW: #FFB84E
+BLUE: #335C67
+*/
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+}
+
+#hero-section{
+    padding: 80px 0;
+    color: whitesmoke;
+    background-image: url("images/annArborBackground.jpg");
+    background-size: cover;
+    height: 200px;
+}
+
+#hero-section:hover{
+    background-image: url("https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExODNicHNrdDV5ZHYxZzZtOGZlZ2k2aGZiOGlsNHl6dnlodDAzNHc5bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aoA7FhYh0x5DkgNm62/giphy.gif");
+    background-size: cover;
+}
+
+#hero-header{
+    margin: 0 auto;
+    padding: 10px 20px;
+    width: fit-content;
+    background-color: #9E2A2B;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px black;
+}
+
+#hero-subtext{
+    margin: 30px auto;
+    padding: 20px 10px;
+    width: 450px;
+    background-color: #540B0E;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px black;
+}
+
+#activity-section{
+    padding: 20px;
+    background-color: #FFF3B0;
+    color: #335C67;
+}
+
+#activity-section-header{
+    font-style: bolder;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+#activity-flexbox{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.activity{
+    width: 180px;
+}
+
+.activity-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+}
+
+.activity-header{
+    font-weight: bold;
+}
+
+#guide-section{
+    background-color: #FFB84E;
+    color: whitesmoke;
+    height: fit-content;
+    padding: 40px;
+    
+}
+
+#card{
+    display: flex;
+    width: 400px;
+    margin: 0px auto;
+    background-color: #9E2A2B;
+    border-bottom: 6px solid #540B0E;
+    border-radius: 10px;
+}
+
+#emilio-img{
+    width: 174px;
+    height: 196px;
+    margin: auto 20px;
+    border-radius: 10px;
+}
+
+#card-content{
+    width: 250px;
+    margin-right: 20px;
+}
+
+#footer-section{
+    background-color: #335C67;
+    color: whitesmoke;
+    height: 80px;
+    padding: 10px;
+}
+
+#footer-text{
+    margin: 10px;
+}
+
+#footer-link{
+    margin: 0px;
+}
+
+span{
+    border-bottom: 3px solid;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.italicize{
+    font-style: italic;
+}
