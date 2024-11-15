@@ -1,0 +1,146 @@
+@font-face{
+    font-family: "scoreboard";
+    src: url("scoreboard.ttf")
+}
+
+body {
+    margin: 0;
+    color: whitesmoke;
+    background-color: #131313;
+}
+
+#timer-container{
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+    text-align: center;
+    margin: 50px auto 30px auto;
+}
+
+#score-container {
+    display: flex;
+    width: 600px;
+    justify-content: space-around;
+    margin: 0px auto;
+    text-align: center;
+}
+
+#timer-div{
+    font-size: 100px;
+    font-family: scoreboard;
+    background-color: #1a1a1a;
+    color: #F0B426;
+    height: 100px;
+    width: 350px;
+}
+
+#timer{
+    position: relative;
+    margin: 20px 20px;
+    width: 300px;
+    left: -18px;
+}
+
+.poss-el{
+    margin: 0;
+}
+
+.bonus-el{
+    margin: 0;
+}
+
+.left-triangle {
+    position: relative;
+    width: 0;
+    border-top: 10px solid transparent;
+    border-right: 20px solid white;
+    border-bottom: 10px solid transparent;
+    margin: 10px auto 25px auto;
+}
+
+.left-triangle #left-triangle-empty {
+  position: absolute;
+  top: -8px;
+  left: 3px;
+  width: 0;
+  border-top: solid 8px transparent;
+  border-right: solid 16px red;
+  border-bottom: solid 8px transparent;
+}
+
+.right-triangle {
+    position: relative;
+    width: 0;
+    border-top: 10px solid transparent;
+    border-left: 20px solid white;
+    border-bottom: 10px solid transparent;
+    margin: 10px auto 25px auto;
+}
+
+.right-triangle #right-triangle-empty {
+  position: absolute;
+  top: -8px;
+  left: -19px;
+  width: 0;
+  border-top: solid 8px transparent;
+  border-left: solid 16px black;
+  border-bottom: solid 8px transparent;
+}
+
+.circle{
+    width: 22px;
+    height: 22px;
+    border-radius: 25px;
+    background: white;
+    margin: 0px auto 10px auto;
+}
+
+.circle #empty-left{
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 25px;
+    background: black;
+    left: 2px;
+    top: 2px;
+}
+
+.circle #empty-right{
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 25px;
+    background: black;
+    left: 2px;
+    top: 2px;
+}
+
+#period-text{
+    margin: 0px;
+}
+
+#period{
+    position: relative;
+    font-family: scoreboard;
+    font-size: 50px;
+    color: #F0B426;
+    margin: 50px auto 0px auto;
+    left: -9px;
+}
+
+.score{
+    font-family: scoreboard;
+    font-size: 70px;
+    color: #D1060E;
+    height: 70px;
+    margin: 0 auto 20px auto;
+    background-color: #1a1a1a;
+}
+
+.button{
+    -webkit-tap-highlight-color: transparent;
+    outline: none !important;
+    color: whitesmoke;
+    background-color: blue;
+    outline: none;
+}
