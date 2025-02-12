@@ -1,0 +1,121 @@
+body {
+    text-align: center;
+    background-color: #273549;
+    font-family: 'Inter';
+}
+
+.h1{
+    font-family: "Karla", serif;
+}
+
+#header-1{
+    margin: 20px 0 0 0;
+    color: rgb(255, 255, 255);
+}
+
+#header-2{
+    margin: 0 0 10px 0;
+    color: #4ADF86;
+}
+
+#header-subtext{
+    margin: 10px 0 0 0;
+    color: whitesmoke;
+    font-weight: 200;
+}
+
+#pwd-length-div{
+    margin-top: 20px;
+}
+
+label{
+    color: whitesmoke;
+}
+
+#pwd-options{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#pwd-options label{
+    margin: 0 10px;
+}
+
+#pwd-btn{
+    margin: 20px 0;
+    width: 200px;
+    height: 42px;
+    color: white;
+    background-color: #10B981;
+    border: 0;
+    border-radius: 4px;
+    outline: none;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#pwd-btn:hover{
+    background-color: #059669;
+}
+
+#alert-info{
+    color: red
+}
+
+.password{
+    margin: 0 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    height: 40px;
+    width: 200px;
+    color: #55F991;
+    background-color: #2F3E53;
+    border-radius: 4px;
+    border: none;
+    word-break: break-all;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.password:hover{
+    background-color: #3F4E63;
+}
+
+hr{
+    border: 1px solid #2F3E53;
+    width: 500px;
+}
+
+#pwd-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#copy-alert {
+    color: #fff;
+    background-color: #10B981;
+    width: 260px;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 20px auto 0 auto;
+    display: none;
+    font-weight: bold;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#copy-alert.show {
+    display: block;
+    opacity: 1;
+}
+
+.karla-font {
+  font-family: "Karla", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}

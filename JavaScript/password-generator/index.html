@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css">
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="karla-font" id="header-1">Generate a</h1>
+        <h1 class="karla-font" id="header-2">random password</h1>
+        <h3 id="header-subtext">Never use an insecure password again.</h3>
+        <div id="pwd-length-div">
+            <label for="pwd-length">Length of Password (limit 10-32):</label>
+            <input type="number" id="pwd-length" name="pwd-length"> <br>
+        </div>
+        <div id="pwd-options">
+            <label><input type="checkbox" id="include-numbers" checked> Include Numbers</label>
+            <label><input type="checkbox" id="include-special" checked> Include Special Characters</label>
+        </div>
+        <button id="pwd-btn" onclick="generatePasswords()">GENERATE PASSWORDS</button>
+        <p id="alert-info"></p>
+        <hr>
+        <div id="pwd-container">
+            <button class="password" id="password-1" onclick="copyToClipboard(this.id)"></button>
+            <button class="password" id="password-2" onclick="copyToClipboard(this.id)"></button>
+        </div>
+        <p id="copy-alert"></p>
+        <script src="index.js"></script>
+    </body>
+</html>
