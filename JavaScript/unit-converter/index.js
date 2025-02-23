@@ -9,6 +9,13 @@ const volumeInfo = document.getElementById("volume-info");
 const massInfo = document.getElementById("mass-info");
 const inputEl = document.getElementById("input-el");
 const convertBtn = document.getElementById("convert-btn");
+const themeSwitch = document.getElementById("theme-switch");
+
+let darkmode = localStorage.getItem("darkmode");
+
+if (darkmode === "active") {
+    enableDarkmode();
+}
 
 function meterToFeet(meters){
     return (meters * 3.2808).toFixed(3);
@@ -58,4 +65,18 @@ function convertUnits(){
     massInfo.textContent = `${units} kilograms = ${kilogramToPound(units)} pounds | ${units} pounds = ${poundToKilogram(units)} kilograms`;
 }
 
+function enableDarkmode() {
+    document.body.classList.add("darkmode");
+    localStorage.setItem("darkmode", "active");
+}
+
+function disableDarkmode() {
+    document.body.classList.remove("darkmode");
+    localStorage.setItem("darkmode", null);
+}
+
 convertBtn.addEventListener("click", convertUnits);
+themeSwitch.addEventListener("click", () => {
+    darkmode = localStorage.getItem("darkmode");
+    darkmode !== "active" ? enableDarkmode() : disableDarkmode();
+});

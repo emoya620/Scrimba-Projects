@@ -3,10 +3,59 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
+:root{
+    --primary-background-color: white;
+    --secondary-background-color: #dddddd;
+    --conversion-color: white;
+    --header-color: #5A537B;
+    --text-color: #353535;
+    --icon-background-color: #1C1C1C;
+}
+
+.darkmode{
+    --primary-background-color: #1C1C1C;
+    --secondary-background-color: #1F2937;
+    --conversion-color: #273549;
+    --header-color: #CCC1FF;
+    --text-color: #FFFFFF;
+    --icon-background-color: whitesmoke;
+}
+
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--icon-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#theme-switch svg{
+    fill: #6943FF;
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child{
+    display: block;
+}
+
 body {
     font-family: Arial, sans-serif;
     color: #FFFFFF;
-    background-color: #1C1C1C;
+    background-color: var(--primary-background-color);
     margin: 0;
 }
 
@@ -62,7 +111,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: auto;
-    background-color: #dddddd;
+    background-color: var(--secondary-background-color);
     width: 550px;
     height: 500px;
     padding: 20px;
@@ -72,12 +121,12 @@ body {
     height: 150px;
     width: 480px;
     text-align: center;
-    background-color: white;
+    background-color: var(--conversion-color);
     margin: 10px 0;
 }
 
 .conversion-header{
-    color: #5A537B;
+    color: var(--header-color);
     font-size: 24px;
     font-weight: bold;
     margin: 40px 0 30px 0;
@@ -85,5 +134,5 @@ body {
 
 .conversion-info{
     font-size: 14px;
-    color: #353535;
+    color: var(--text-color);
 }
