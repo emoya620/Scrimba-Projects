@@ -3,6 +3,8 @@ let player = {
     chips: 100
 }
 
+const startGameBtn = document.getElementById("startBtn")
+const newCardBtn = document.getElementById("newCardBtn")
 let cards = []
 let sum = 0
 let currentWager = 0
@@ -70,3 +72,6 @@ function newCard() {
         renderGame()        
     }
 }
+
+startGameBtn.addEventListener("click", startGame)
+newCardBtn.addEventListener("click", newCard)
